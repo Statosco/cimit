@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="toggle-button.css">
+</head>
+<body>
+    <div class="toggle-btn">
+        <div class="icon">
+            <i class='bx bxs-lock-open'></i> 
+        </div>
+    </div>
+    <script>
+        const toglebtn = document.querySelector(".toggle-btn"),
+            lockIcon = document.querySelector(".icon i");
+
+            toglebtn.addEventListener("click", () => {
+                toglebtn.classList.toggle("active")
+
+                if(toglebtn.classList.contains("active")){
+                    return lockIcon.classList.replace("bxs-lock-open","bxs-lock")
+                }
+                lockIcon.classList.replace("bxs-lock","bxs-lock-open")
+            })
+    </script>
+</body>
+</html>

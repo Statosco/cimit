@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #68eacc 0%, #497be8 100%);
+}
+.card{
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.card .title{
+    font-size: 22px;
+    font-weight: 500;
+}
+.card .content{
+    margin-top: 20px;
+}
+.card label.box{
+    display: flex;
+    margin-top: 12px;
+    background: #ddd;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+.card label.box:hover{
+    background: #d5bbf7;
+}
+.card label.box .course{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.card label.box .circle{
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: inline-block;
+    border: 5px solid transparent;
+    box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+}
+#one:checked ~ label.first,
+#two:checked ~ label.second,
+#thre:checked ~ label.third{
+    border-color: #8e49e8;
+}
+.card input[type="radio"]{
+    display: none;
+}
+#one:checked ~ label.first .circle,
+#two:checked ~ label.second .circle,
+#thre:checked ~ label.third .circle{
+    border-color: #8e49e8;
+    color: #fff;
+}

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+html,body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #be2edd;
+}
+.main-div{
+    width: 365px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.main-div .title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.main-div .social-icons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.social-icons a{
+    display: block;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 45px;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+.social-icons span{
+    margin-left: 5px;
+    font-size: 18px;
+}
+.social-icons a:first-child{
+    margin-right: 5px;
+    background: #4267b2;
+}
+.social-icons a:first-child:hover{
+    background: #375695;
+}
+.social-icons a:last-child{
+    margin-left: 5px;
+    background: #1da1f2;
+}
+.social-icons a:last-child:hover{
+    background: #0d8bd9;
+}
+form{
+    margin-top: 35px;
+}
+form .input-box{
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+}
+.input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 45px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    transition: all 0.3s ease;
+}
+.input-box input:focus{
+    border-color: #be2edd;
+}
+.input-box .icon{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: grey;
+    transform: translateY(-50%);
+}
+form .option-div {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.option-div .check-box{
+    display: flex;
+    align-items: center;
+
+}
+.option-div span{
+    margin-left: 5px;
+    font-size: 16px;
+    color: #333;
+}
+.option-div .forget-div a{
+    font-size: 16px;
+    color: #be2edd;
+}
+.button input{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    padding: 0;
+    background: #be2edd;
+    cursor: pointer;
+    transition: all 0.3 linear;
+}
+.button input:hover{
+    background: #a720c5;
+}
+form .sign-up{
+    text-align: center;
+    margin-top: 25px;
+}
+.sign-up a{
+    color: #be2edd;
+}
+form a{
+    text-decoration: none;
+}
+form a:hover{
+    text-decoration: underline;
+}

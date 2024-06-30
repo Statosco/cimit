@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5d31dfb617.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="responsive-full-screen-bar.css">
+</head>
+<body>
+    <div class="input-box">
+        <i class="fa-thin fa-magnifying-glass"></i>
+        <input type="text" placeholder="Type here.....">
+        <button class="button">Search</button>
+    </div>
+
+    <script>
+        const button = document.querySelector(".button")
+        button.addEventListener("mousedown", () => button.classList.add("clicked"))
+        button.addEventListener("mouseup", () => button.classList.remove("clicked"))
+    </script>
+</body>
+</html>

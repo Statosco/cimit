@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+   
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(248, 161, 0);
+}
+.logo img{
+    width: 48px;
+    margin-right: 10px;
+}
+.container{
+    position: relative;
+    background-image: url(Orange-Peel-Texture.jpg);
+    background-size: cover;
+    padding: 25px;
+    border-radius: 28px;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0 5px 10px ;
+}
+section::before{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #fcac01fe, #ff7300);
+    transform: translate(-150px, -100px);
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #f3f5f5;
+    justify-content: center;
+    perspective: 1000px;
+}
+section::after{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #c98a02fe, #ffea05);
+    transform: translate(150px, 100px);
+    z-index: -1;
+}
+header,
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h5{
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 400;
+}
+header .chip{
+    width: 60px;
+    border-radius: 90px;
+}
+h6{
+    color: aliceblue;
+    font-size: 12px;
+    font-family: 400;
+}
+
+.container .card-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: flex-end;
+}
+
+h5.number{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+h5.name{
+    margin-top: 20px;
+}

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e1ccff;
+}
+.container{
+    max-width: 1050px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 20px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+.content .topic{
+    font-size: 22px;
+    font-weight: 500;
+    color: #9d56ff;
+}
+.content .img-box{
+    max-width: 55%;
+    padding: 20px;
+}
+.content .img-box img{
+    width: 100%;
+    border-radius: 10px;
+}
+.content form{
+    width: 40%;
+    margin-right: 30px;
+}
+.content .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+.content .input-box input{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 16px;
+    border: 2px solid transparent;
+    background: #e1ccff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.content .input-box label{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9069c5;
+    font-size: 15px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.content .input-box input:focus,
+.content .input-box input:valid{
+    background-color: #fff;
+    border-color: #9069c5;
+}
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label{
+    top: 0;
+    left: 12px;
+    display: 140px;
+    color: #8b40f4;
+    background: #fff;
+}
+.content .message-box{
+    min-height: 100px;
+    position: relative;
+}
+.content .message-box textarea{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    resize: none;
+    background: #e1ccff;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+
+}
+.content .message-box label{
+    position: absolute;
+    font-size: 16px;
+    color: #9069c5;
+    left: 18px;
+    top: 6px;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+.content .message-box textarea:focus{
+    border-color: #9d56ff;
+    background-color: #fff;
+}
+.content .message-box textarea:focus ~ label{
+    left: 12px;
+    color: #9d56ff;
+    top: -10px;
+    background: #fff;
+    font-size: 18px;
+}
+.content .input-box input[type="submit"]{
+    padding-left: 0;
+    font: 18px sans-serif;
+    font-weight: 500;
+    color: #fff;
+    background: #8b40f4;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    letter-spacing: 1px;
+}
+.content .input-box input[type="submit"]:hover{
+    background-color: #6941a1;
+}
+@media (max-width:1000px){
+    .content .img-box{
+        max-width: 70%;
+    }
+    .content{
+        padding: 10px 0;
+    }
+}
+@media (max-width:800px){
+    .content .img-box{
+        display: none;
+    }
+    .content form{
+        width: 100%;
+        margin-left: 30px;
+    }
+}

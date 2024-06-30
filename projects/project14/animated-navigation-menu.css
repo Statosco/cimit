@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+}
+nav{
+    width: 600px;
+    height: 60px;
+    border-radius: 5px;
+    background: fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+nav label{
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+    margin: 0 5px;
+    color: #8e44ad;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+nav label:hover{
+    background: rgba(142, 68, 273, 0.3);
+    border-radius: 50px;
+}
+nav label i{
+    margin-right: 4px;
+}
+.slider{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background: #8e44ad;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#code:checked ~ nav label.code,
+#help:checked ~ nav label.help,
+#about:checked ~ nav label.about,
+#blog:checked ~ nav label.blog,
+#home:checked ~ nav label.home{
+    color: #fff;
+}
+#blog:checked ~ nav .slider{
+    left: 20%;
+}
+#code:checked ~ nav .slider{
+    left: 40%;
+}
+#help:checked ~ nav .slider{
+    left: 60%;
+}
+#about:checked ~ nav .slider{
+    left: 80%;
+}
+#home:checked ~ nav .slider{
+    left: 0;
+}
+.container input{
+    display: none;
+}
